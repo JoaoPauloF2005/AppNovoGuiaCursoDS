@@ -10,11 +10,22 @@ using Xamarin.Forms.Xaml;
 namespace AppNovoGuiaCursoDS.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ComponetesPrimeiro : ContentView
+    public partial class ComponentesPrimeiro : ContentPage
     {
-        public ComponetesPrimeiro()
+        public ComponentesPrimeiro()
         {
             InitializeComponent();
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+            try
+            {
+                var c = new Componente
+                {
+                    Nome = "Linguagem, Trabalho e Tecnologia"
+                };
+            }
         }
     }
 }
