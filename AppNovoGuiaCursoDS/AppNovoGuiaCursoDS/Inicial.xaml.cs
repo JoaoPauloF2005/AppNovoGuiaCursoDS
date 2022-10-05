@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace AppNovoGuiaCursoDS
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Inicial : ContentView
+    public partial class Inicial : ContentPage
     {
         public Inicial()
         {

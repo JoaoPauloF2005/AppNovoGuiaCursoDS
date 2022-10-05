@@ -7,14 +7,17 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+using AppNovoGuiaCursoDS.Models;
+
 namespace AppNovoGuiaCursoDS.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class VerComponente : ContentView
+    public partial class VerComponente : ContentPage
     {
-        public VerComponente()
+        public VerComponente(Componente c)
         {
             InitializeComponent();
+            BindingContext = c;
         }
     }
 }
