@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace AppNovoGuiaCursoDS.Views
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Vestibulinho : ContentView
+    public partial class Vestibulinho : ContentPage
     {
         public Vestibulinho()
         {
