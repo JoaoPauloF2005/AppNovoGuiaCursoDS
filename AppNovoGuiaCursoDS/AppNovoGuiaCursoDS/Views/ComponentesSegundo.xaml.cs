@@ -72,14 +72,12 @@ namespace AppNovoGuiaCursoDS.Views
             {
                 var c = new Componente
                 {
-                    Nome = "Desenvolvimento de Sistemas",
+                    Nome = "Banco de Dados II",
 
-                    AtribuicoesResponsabilidades = "Analisar e projetar sistemas de informação, selecionando linguagens" +
-                                                   "de programação e ambientes de desenvolvimento de acordo com as especifidades do" +
-                                                   "projeto. • Codificar e depurar programas.",
+                    AtribuicoesResponsabilidades = "Implementar banco de dados.",
 
-                    ValoresAtitudes = "Fortalecer a persistência e o interesse na resolução de situações-problema. • Incentivar ações" +
-                                      "que promovam a cooperação. • Desenvolver a criatividade. "
+                    ValoresAtitudes = "Incentivar a criatividade. • Desenvolver a criticidade. • Fortalecer a persistência e o "+
+                                      "interesse na resolução de situações-problema"
                 };
 
                 await Navigation.PushAsync(new VerComponente(c));
@@ -95,14 +93,12 @@ namespace AppNovoGuiaCursoDS.Views
             {
                 var c = new Componente
                 {
-                    Nome = "Desenvolvimento de Sistemas",
+                    Nome = "Internet e Protocolos",
 
-                    AtribuicoesResponsabilidades = "Analisar e projetar sistemas de informação, selecionando linguagens" +
-                                                   "de programação e ambientes de desenvolvimento de acordo com as especifidades do" +
-                                                   "projeto. • Codificar e depurar programas.",
+                    AtribuicoesResponsabilidades = "Utilizar protocolos de redes e internet para comunicação de dados.",
 
-                    ValoresAtitudes = "Fortalecer a persistência e o interesse na resolução de situações-problema. • Incentivar ações" +
-                                      "que promovam a cooperação. • Desenvolver a criatividade. "
+                    ValoresAtitudes = "Incentivar comportamentos éticos. • Promover ações que considerem o respeito às normas"+
+                                      "estabelecidas. • Fortalecer a persistência e o interesse na resolução de situações-problema."
                 };
 
                 await Navigation.PushAsync(new VerComponente(c));
@@ -118,14 +114,12 @@ namespace AppNovoGuiaCursoDS.Views
             {
                 var c = new Componente
                 {
-                    Nome = "Desenvolvimento de Sistemas",
+                    Nome = "Programação de Aplicativos Mobile I",
 
-                    AtribuicoesResponsabilidades = "Analisar e projetar sistemas de informação, selecionando linguagens" +
-                                                   "de programação e ambientes de desenvolvimento de acordo com as especifidades do" +
-                                                   "projeto. • Codificar e depurar programas.",
+                    AtribuicoesResponsabilidades = "Elaborar projetos de aplicativos para plataformas móveis.",
 
-                    ValoresAtitudes = "Fortalecer a persistência e o interesse na resolução de situações-problema. • Incentivar ações" +
-                                      "que promovam a cooperação. • Desenvolver a criatividade. "
+                    ValoresAtitudes = "Incentivar a criatividade. • Responsabilizar-se pela produção, utilização e divulgação de "+
+                                      "informações. • Estimular a organização."
                 };
 
                 await Navigation.PushAsync(new VerComponente(c));
@@ -141,14 +135,13 @@ namespace AppNovoGuiaCursoDS.Views
             {
                 var c = new Componente
                 {
-                    Nome = "Desenvolvimento de Sistemas",
+                    Nome = "Programação Web II",
 
-                    AtribuicoesResponsabilidades = "Analisar e projetar sistemas de informação, selecionando linguagens" +
-                                                   "de programação e ambientes de desenvolvimento de acordo com as especifidades do" +
-                                                   "projeto. • Codificar e depurar programas.",
+                    AtribuicoesResponsabilidades = "Planejar projetos de sistemas de informação para web ",
 
-                    ValoresAtitudes = "Fortalecer a persistência e o interesse na resolução de situações-problema. • Incentivar ações" +
-                                      "que promovam a cooperação. • Desenvolver a criatividade. "
+                    ValoresAtitudes = "Responsabilizar-se pela produção, utilização e divulgação de informações. "+
+                                      " • Fortalecer a persistência e o interesse na resolução de situações-problema."+
+                                      "• Incentivar a criatividade."
                 };
 
                 await Navigation.PushAsync(new VerComponente(c));
@@ -158,6 +151,27 @@ namespace AppNovoGuiaCursoDS.Views
                 await DisplayAlert("Ops!", ex.Message, "OK");
             }
         }
-       
+        private async void Button_Clicked_6(object sender, EventArgs e)
+        {
+            try
+            {
+                var c = new Componente
+                {
+                    Nome = "Planejamento do Trabalho de Conclusão de Curso (TCC) em Desenvolvimento de Sistemas",
+
+                    AtribuicoesResponsabilidades = "Planejar projetos de sistemas computacionais ",
+
+                    ValoresAtitudes = "Comunicar-se com a equipe com clareza e objetividade. • Organizar procedimentos de "+
+                                      "maneira diversa, visando melhor eficiência"
+                };
+
+                await Navigation.PushAsync(new VerComponente(c));
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops!", ex.Message, "OK");
+            }
+        }
+
     }
 }
